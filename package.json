@@ -10,6 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-aria/combobox": "^3.9.1",
+    "@react-aria/overlays": "^3.22.1",
+    "@react-aria/utils": "^3.24.1",
+    "@react-stately/combobox": "^3.8.4",
+    "axios": "^1.7.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
