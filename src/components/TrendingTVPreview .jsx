@@ -6,7 +6,6 @@ const API_KEY = 'c84b15de02b182bd760ca972c743c53f'; // Recuerda reemplazar 'tu_a
 
 const TrendingTVPreview = () => {
   const [tvShows, setTvShows] = useState([]);
-  console.log("tvShows")
 
   useEffect(() => {
     const fetchTvShows = async () => {
@@ -21,6 +20,9 @@ const TrendingTVPreview = () => {
     fetchTvShows();
   }, []);
 
+  console.log("tvShows")
+  console.log(tvShows)
+
   return (
     <div id="trendingTvPreview">
       <h2>Trending TV Shows Today</h2>
@@ -29,7 +31,7 @@ const TrendingTVPreview = () => {
           <div key={tvShow.id} className="movie-container">
             <img
               className="movie-img"
-              src={`https://image.tmdb.org/t/p/w300${tvShow.backdrop_path}`}
+              src={`https://image.tmdb.org/t/p/w300${tvShow.poster_path}`}
               alt={tvShow.name}
             />
           </div>
@@ -39,8 +41,7 @@ const TrendingTVPreview = () => {
   );
 
   
-  console.log("tvShows")
-  console.log(tvShows)
+
 };
 
 export default TrendingTVPreview;

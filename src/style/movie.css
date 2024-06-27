@@ -13,7 +13,7 @@
 
 .movie-container {
   flex: 0 0 auto;
-  width: 1%; /* Ajusta el ancho al 20% para mostrar 5 elementos a la vez */
+  width: 5%; /* Ajusta el ancho al 20% para mostrar 5 elementos a la vez */
   box-sizing: border-box;
   padding: 10px;
 }

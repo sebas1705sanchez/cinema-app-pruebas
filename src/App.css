@@ -15,32 +15,7 @@ header {
 
 main {
   padding: 20px;
+  display: block;
 }
 
-.section {
-  margin-bottom: 40px;
-}
 
-.trendingPreview-container {
-  width: 100%;
-  overflow-x: auto;
-}
-
-.trendingPreview-movieList {
-  display: flex;
-  flex-direction: row;
-  overflow-x: scroll;
-  width: max-content;
-}
-
-.movie-container {
-  flex: 0 0 auto;
-  width: 20%; /* Ajusta el ancho al 20% para mostrar 5 elementos a la vez */
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.movie-img {
-  width: 100%;
-  border-radius: 8px;
-}

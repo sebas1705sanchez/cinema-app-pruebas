@@ -21,6 +21,9 @@ const TrendingMoviesPreview = () => {
     fetchMovies();
   }, []);
 
+  console.log("movies")
+  console.log(movies)
+
   return (
     <div id="trendingPreview">
       <h2>Trending Movies Today</h2>
@@ -29,7 +32,7 @@ const TrendingMoviesPreview = () => {
           <div key={movie.id} className="movie-container">
             <img
               className="movie-img"
-              src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
+              src={`https://image.tmdb.org/t/p/w300${movie.backdrop_path}`}
               alt={movie.title}
             />
           </div>

@@ -6,12 +6,11 @@ const API_KEY = 'c84b15de02b182bd760ca972c743c53f'; // Recuerda reemplazar 'tu_a
 
 const TrendingPeoplePreview = () => {
   const [people, setPeople] = useState([]);
-  console.log('people')
 
   useEffect(() => {
     const fetchPeople = async () => {
       try {
-        const res = await axios.get(`https://api.themoviedb.org/3/trending/tv/day?api_key=${API_KEY}`);
+        const res = await axios.get(`https://api.themoviedb.org/3/trending/person/day?api_key=${API_KEY}`);
         //console.log(res.data.results.slice(0, 5))
         setPeople(res.data.results.slice(0, 5)); // Limitar el número de personas a 5
       } catch (error) {
@@ -21,6 +20,9 @@ const TrendingPeoplePreview = () => {
 
     fetchPeople();
   }, []);
+
+  console.log("people")
+  console.log(people)
 
   return (
     <div id="trendingPeoplePreview">
